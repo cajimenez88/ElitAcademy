@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListaComponent } from './lista/lista.component';
 import {NgOptimizedImage} from "@angular/common";
 import { BannerPrincipalComponent } from './banner-principal/banner-principal.component';
+import { CardTituloComponent } from './card-titulo/card-titulo.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { BannerPrincipalComponent } from './banner-principal/banner-principal.co
     AppComponent,
     ListaComponent,
     BannerPrincipalComponent,
+    CardTituloComponent,
 
   ],
     imports: [
