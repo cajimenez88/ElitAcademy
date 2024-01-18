@@ -7,6 +7,7 @@ import { ListaComponent } from './lista/lista.component';
 import {NgOptimizedImage} from "@angular/common";
 import { BannerPrincipalComponent } from './banner-principal/banner-principal.component';
 import { CardTituloComponent } from './card-titulo/card-titulo.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { CardTituloComponent } from './card-titulo/card-titulo.component';
     ListaComponent,
     BannerPrincipalComponent,
     CardTituloComponent,
+    FooterComponent,
 
   ],
     imports: [
