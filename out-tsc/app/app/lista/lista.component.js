@@ -4,10 +4,10 @@ let ListaComponent = class ListaComponent {
 };
 ListaComponent = __decorate([
     Component({
-        selector: 'app-lista',
+        selector: 'app-nav',
         templateUrl: './lista.component.html',
-        styleUrl: './lista.component.css'
+        styleUrl: './nav.component.css'
     })
 ], ListaComponent);
 export { ListaComponent };
-//# sourceMappingURL=lista.component.js.map
+//# sourceMappingURL=nav.component.js.map
