@@ -1,3 +1,14 @@
 #home1, #home2, #home3, #home4 {
     display: none;
 }
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Estilos específicos para pantallas medianas */
+}
+
+@media (min-width: 993px) {
+    /* Estilos específicos para pantallas grandes */
+}
