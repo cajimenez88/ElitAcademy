@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './card-titulo.component.css'
 })
 export class CardTituloComponent {
-  
+
   muestrainformacion = "Cursos Disponibles";
   propertyBinding = '25px';
 
