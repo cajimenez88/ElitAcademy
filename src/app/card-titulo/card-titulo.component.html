@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="card">
     <div class="row">
         <div class="col">
             <br>
@@ -15,8 +15,10 @@
                 <img src="/assets/Scratch1.png" class="card-img-top" alt="Foto1">
                 <div class="card-body">
                     <h5 [style.font-size]="propertyBinding" class="card-title">Programación para Niños - Scratch</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <p class="card-text">Navega en el mundo de la programación y descubre movimientos que puedes dar a tus personajes a través de bloques de programación y retos por resolver.</p>
+                    <a (click)="mostrarContenido('home1')" class="btn btn-primary">Más información</a>
+
+
                 </div>
             </div>
         </div>
@@ -28,7 +30,8 @@
                         <h5 [style.font-size]="propertyBinding" class="card-title">Ilustrator para Principiantes</h5>
                         <p class="card-text">Aprende Adobe Illustrator desde cero, descubre las principales herramientas y aplica todo lo aprendido en proyectos gráficos tanto impresos como digitales.
                         </p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <a (click)="mostrarContenido('home2')" class="btn btn-primary">Más información</a>
+
                     </div>
                 </div>
             </div>
@@ -39,17 +42,21 @@
                 <div class="card-body">
                     <h5 [style.font-size]="propertyBinding" class="card-title">Modelado Básico en 3D con Maya</h5>
                     <p class="card-text">Al completar el curso tendrás la capacidad de modelar personajes en 3D que te servirán para futuras animaciones</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a (click)="mostrarContenido('home3')" class="btn btn-primary">Más información</a>
+
                 </div>
             </div>
         </div>
+
+
         <div class="col-12 col-sm-6 col-lg-6 mt-3">
             <div class="card">
                 <img src="/assets/IMAGEN-1.png" class="card-img-top" alt="Foto4">
                 <div class="card-body">
-                    <h5 [style.font-size]="propertyBinding" class="card-title">Fotografía de Cero a Pro</h5>
+                    <h5 [style.font-size]="propertyBinding" class="card-title">Curso de fotografía de Cero a Pro</h5>
                     <p class="card-text">Captura momentos inolvidables. Únete a nuestro curso de fotografía y desarrolla tu talento visual. ¡Explora, aprende, crea recuerdos eternos!.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a (click)="mostrarContenido('home4')" class="btn btn-primary">Más información</a>
+
                 </div>
             </div>
         </div>
@@ -61,86 +68,79 @@
 <div class="container" id="home1" style="display: none">
     <div class="row">
         <div class="col-sm-6 col-lg-7" >
-            <img src="img/EMBARAZO1.png" alt="">
+            <img src="assets/Scratch1.png" alt="">
         </div>
 
         <div class="col-sm-3" >
-            <H3> Sesiones de fotos embarazo</H3>
-            <p> Este paquete incluye:</p>
+            <H3> Programación para Niños - Scratch</H3>
+            <h5> En este curso aprenderas:</h5>
             <li>
-                5 Fotos 13x18 cm
-                (Elige el cliente las fotos)
+                Fundamentos Fotográficos.
 
             </li>
             <li>
-                2 Fotos 20x30 cm
-                (Elige el cliente las fotos)
+                Cero a Experto en Edición Digital.
 
             </li>
             <li>
-                48 horas para modificaciones desde que se entrega las fotos en digitales.
+                Dominio Total de la Iluminación.
             </li>
 
             <li>
-                Cualquier foto adicional a editar tiene un valor de $8.
+                Cualquier foto adicional a editar tiene un valor de $5.
             </li>
 
             <li>
-                Precio de la sesión $100
-
-            </li>
-            <li>
-                Lugares atrasctivos para la sesion o en estudio
-            </li>
-
-            <li>
-                En caso de elegir un estilo de fotos creativas el valor será relativo a la idea a realizar
+                De Principiante a Profesional en Narrativa Visual.
 
             </li>
             <br>
-            <a type="button" class="btn btn-dark float-right" href="https://w.app/Pherlynvelez">Cotiza quí</a>
+            <!-- Botón para regresar -->
+            <button class="btn btn-dark float-left" (click)="regresar()">Regresar</button>
+
+            <!-- Botón para proceso de compra -->
+            <button class="btn btn-success float-right" (click)="iniciarProcesoCompra()">Comprar</button>
         </div>
     </div>
 </div>
 
 
-<div class="container" id="home2" style="display: block">
+<div class="container" id="home2" style="display: none">
     <div class="row">
         <div class="col-sm-6 col-lg-7" >
-            <img src="img/RETRATI-BN.png" alt="Mujer posando agarrando el cabello y su bufanda con mirada posesiva en blanco y negro">
+            <img src="assets/curso%20ilustrator.jpg" alt="Mujer posando agarrando el cabello y su bufanda con mirada posesiva en blanco y negro">
         </div>
 
         <div class="col-sm-3" >
-            <H3> Sesiones de fotos en estudio</H3>
-            <p> Este paquete incluye:</p>
+
+            <H3> Ilustrator para Principiantes</H3>
+            <h5> En este curso aprenderas:</h5>
             <li>
-                4 Fotos 13x18 cm
-                (Elige el cliente las fotos)
+                Fundamentos Fotográficos.
 
             </li>
             <li>
-                2 Fotos 20x30 cm
-                (Elige el cliente las fotos)
+                Cero a Experto en Edición Digital.
 
             </li>
             <li>
-                48 horas para modificaciones desde que se entrega las fotos en digitales.
+                Dominio Total de la Iluminación.
             </li>
 
             <li>
-                Cualquier foto adicional a editar tiene un valor de $10.
+                Cualquier foto adicional a editar tiene un valor de $5.
             </li>
 
             <li>
-                Precio de la sesión $120
-
-            </li>
-            <li>
-                Background navideño a elegir (3 opciones)
+                De Principiante a Profesional en Narrativa Visual.
 
             </li>
             <br>
-            <a type="button" class="btn btn-dark float-right" href="https://w.app/Pherlynvelez">Compra aquí</a>
+            <!-- Botón para regresar -->
+            <button class="btn btn-dark float-left" (click)="regresar()">Regresar</button>
+
+            <!-- Botón para proceso de compra -->
+            <button class="btn btn-success float-right" (click)="iniciarProcesoCompra()">Comprar</button>
         </div>
     </div>
 </div>
@@ -150,24 +150,22 @@
 <div class="container" id="home3" style="display: none">
     <div class="row">
         <div class="col-sm-6 col-lg-7" >
-            <img src="img/NAVIDAD1.png" alt="Mujer posando agarrando el cabello y su bufanda con mirada posesiva en blanco y negro">
+            <img src="assets/IMAGEN-1.png" alt="Mujer posando agarrando el cabello y su bufanda con mirada posesiva en blanco y negro">
         </div>
 
         <div class="col-sm-3" >
-            <H3> Sesiones de fotos en estudio</H3>
-            <p> Este paquete incluye:</p>
+            <H3> Modelado Básico en 3D con Maya</H3>
+            <h5> En este curso aprenderas:</h5>
             <li>
-                6 Fotos 13x18 cm
-                (Elige el cliente las fotos)
+                Fundamentos Fotográficos.
 
             </li>
             <li>
-                2 Fotos 20x30 cm
-                (Elige el cliente las fotos)
+                Cero a Experto en Edición Digital.
 
             </li>
             <li>
-                48 horas para modificaciones desde que se entrega las fotos en digitales.
+                Dominio Total de la Iluminación.
             </li>
 
             <li>
@@ -175,20 +173,56 @@
             </li>
 
             <li>
-                Precio de la sesión $120
+                De Principiante a Profesional en Narrativa Visual.
 
             </li>
             <br>
-            <a type="button" class="btn btn-dark float-right" href="https://w.app/Pherlynvelez">Compra aquí</a>
+            <!-- Botón para regresar -->
+            <button class="btn btn-dark float-left" (click)="regresar()">Regresar</button>
+
+            <!-- Botón para proceso de compra -->
+            <button class="btn btn-success float-right" (click)="iniciarProcesoCompra()">Comprar</button>
         </div>
     </div>
-
-
 </div>
 
+ <div class="container" id="home4" style="display: none">
+        <div class="row">
+            <div class="col-sm-6 col-lg-7" >
+                <img src="assets/IMAGEN-1.png" alt="Mujer posando agarrando el cabello y su bufanda con mirada posesiva en blanco y negro">
+            </div>
 
+            <div class="col-sm-3" >
+                <H3> Curso de fotografía de Cero a Pro</H3>
+                <h5> En este curso aprenderas:</h5>
+                <li>
+                    Fundamentos Fotográficos.
 
+                </li>
+                <li>
+                    Cero a Experto en Edición Digital.
 
+                </li>
+                <li>
+                    Dominio Total de la Iluminación.
+                </li>
 
+                <li>
+                    Cualquier foto adicional a editar tiene un valor de $5.
+                </li>
 
+                <li>
+                    De Principiante a Profesional en Narrativa Visual.
+
+                </li>
+                <br>
+                <!-- Botón para regresar -->
+                <button class="btn btn-dark float-left" (click)="regresar()">Regresar</button>
+
+                <!-- Botón para proceso de compra -->
+                <button class="btn btn-success float-right" (click)="iniciarProcesoCompra()">Comprar</button>
+            </div>
+        </div>
+
+</div>
 
