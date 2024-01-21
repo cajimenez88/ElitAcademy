@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class CardTituloComponent {
 
   muestrainformacion = "Cursos Disponibles"
-
+  propertyBinding = '25px'
 }
