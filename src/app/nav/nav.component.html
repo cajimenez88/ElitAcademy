@@ -22,13 +22,15 @@
             Cursos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Ilustrator para principiantes</a></li>
+
+              <li *ngFor="let curso of menucursos" (click)="mostrarcurso(curso)"><a class="dropdown-item" [href]="curso.link">{{curso.nombre}}</a></li>
+            <!--<li><a class="dropdown-item" href="#">Ilustrator para principiantes</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Modelado básico en 3D</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Fotografía de 0 a Pro</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Programación para niños Scratch</a></li>
+            <li><a class="dropdown-item" href="#">Programación para niños Scratch</a></li>-->
           </ul>
         </li>
         <li class="nav-item">
