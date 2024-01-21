@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   botonregistro= 'Enviar';
   titulo='Regístrate aquí';
+  mensaje='Registrado'
+
+mostrarmensaje(){
+    alert(this.mensaje)
 }
+
+  }
+
