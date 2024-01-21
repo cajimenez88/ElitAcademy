@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class CardTituloComponent {
 
   muestrainformacion = "Cursos Disponibles"
+  colorEstado='#000000';
 
 }
