@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   inicionavbar="Inicio";
-imagenUrl:string="/assets/IMAGEN-1.png"
-
+imagenUrl:string="/assets/IMAGEN-1.png";
+menucursos=[{link:"#", nombre:"Ilustrator para principiantes"},
+    {link:"#", nombre:"Modelado básico en 3D"},{link:"#", nombre:"Fotografía de 0 a Pro"},
+    {link:"#", nombre:"Programación para niños Scratch"}];
+    mostrarcurso(curso:any){
+        alert("Has elegido el siguiente curso "+ curso.nombre)
+    }
 
 
 }
