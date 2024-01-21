@@ -1,21 +1,21 @@
 <!--<nav class="navbar navbar-expand-lg bg-body-tertiary">-->
- <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark" [ngClass]="{'sticky-top': isNavbarSticky}">
     <!--<nav class="navbar" style="background-color: #e3f2fd;">-->
   <!--<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">-->
      <div class="container-fluid">
         <!--<a class="navbar-brand" href="#">Navbar</a>-->
 
-         <img [src]="imagenUrl" style="height:50px; width:60px" class="card-img-top" alt="Foto1">
+         <img [src]="imagenUrl" style="height:20px; width:80px" class="card-img-top" alt="Foto1">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">{{inicionavbar}}</a>
+          <a class="nav-link active" aria-current="page" href="#">{{inicionavbar}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Nosotros</a>
+            <a class="nav-link" href="#" (click)="mostrarMensaje()">Nosotros</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
