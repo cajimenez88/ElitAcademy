@@ -1,3 +1,4 @@
+
 import { Component, HostListener } from '@angular/core';
 
 @Component({
@@ -11,11 +12,13 @@ imagenUrl:string="/assets/Elitlogo1.png";
 menucursos=[{link:"#", nombre:"Ilustrator para principiantes"},
     {link:"#", nombre:"Modelado básico en 3D"},{link:"#", nombre:"Fotografía de 0 a Pro"},
     {link:"#", nombre:"Programación para niños Scratch"}];
+
     mostrarcurso(curso:any){
         alert("Has elegido el siguiente curso "+ curso.nombre)
     }
     // Variable para controlar si la barra de navegación debe ser pegajosa
     isNavbarSticky: boolean = false;
+
 
     // Método que se llama cuando ocurre el evento de scroll
     @HostListener('window:scroll', ['$event'])
