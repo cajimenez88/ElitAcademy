@@ -26,7 +26,17 @@ menucursos=[{link:"#", nombre:"Ilustrator para principiantes"},
         // Ajustar el valor de isNavbarSticky según la posición de scroll
         this.isNavbarSticky = window.scrollY > 0;
     }
+
     mostrarMensaje(): void {
         window.alert("Estamos en construcción");
     }
+
+    comprasPendientes: boolean = false;
+
+    mostrarMensajeCarrito(): void {
+        window.alert("Tienes compras pendientes");
+        // También puedes realizar otras acciones relacionadas con el carrito aquí
+    }
+
 }
+

@@ -5,8 +5,12 @@
      <div class="container-fluid">
         <!--<a class="navbar-brand" href="#">Navbar</a>-->
 
+         <
+
          <img [src]="imagenUrl" style="height:40px; width:50px" class="card-img-top" alt="Foto1">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,8 +38,12 @@
           </ul>
         </li>
       </ul>
-        <div class="contenedor-carrito">
+        <button class="contenedor-carrito" (click)="mostrarMensajeCarrito()">
             <i class="bi bi-cart"></i>
+        </button>
+
+        <div *ngIf="comprasPendientes" class="alert alert-info">
+            Tienes compras pendientes
         </div>
 
      <form class="d-flex" role="search">
